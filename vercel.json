@@ -2,11 +2,11 @@
     "routes": [
       {
         "src": "^/comunidade",
-        "dest": "/comunidade/index.html"
+        "dest": "/comunidade"
       },
       {
         "src": "^/",
-        "dest": "/index.html"
+        "dest": "/"
       }
     ]
   }
