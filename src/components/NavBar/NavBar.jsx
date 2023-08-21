@@ -5,7 +5,7 @@ import '/src/App.css'
 function NavBar() {
   return (
     <nav className='NavBar'>
-        <img src='/src/assets/logo.png' height='65px'/>
+        <img src='/logo.png' height='65px'/>
         <div/>
         <div className='Links'>
             <a className="link" href="/" >Home</a>
