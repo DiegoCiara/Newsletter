@@ -1,0 +1,159 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.NavBar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+
+.Links{
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.link{
+  font-family: 'Montserrat' !important;
+}
+
+.Page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95vw;
+}
+
+label{
+  width: 95%;
+  text-align: left;
+}
+
+.FormContainer{
+  width: 40%;
+  height: auto;
+}
+
+.Form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+
+.InputContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.Input{
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: 'Montserrat';
+  width: 100%;
+  outline: none;
+  border: 1px solid transparent;
+  transition: border-color 0.25s;
+}
+.Input:hover{
+    border-color: #7a80f8;
+}
+
+.Submit{
+  width: 100%;
+}
+
+.ContactsList{
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+}
+
+.Pagination{
+  position: fixed;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width:95%;
+}
+
+.Card{
+  border-radius: 4px;
+  box-shadow: 0px 2px 5px #00000017;
+  border: 1px solid #eeeeee;
+  transition: .3s;
+}
+.Card:hover{
+  transition: .3s;
+  scale: 100.5%;
+}
+
+.ContactCard{
+  width: 80%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  align-items: center;
+}
+
+.data{
+  width: 100%;
+  text-align: left;
+
+}
+
+.ContainerIcons{
+  display: flex;
+  gap: 15px;
+}
+
+.icon{
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+@media (max-width:850px) {
+  .FormContainer{
+    width: 100%;
+  }
+  .ContactCard{
+    flex-direction: column;
+    gap: auto;
+  }
+  .Pagination{
+    position: inherit;
+    height: 100px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .Card {
+    background-color: #3b3b3b;
+    border: 1px solid #505050;
+  }
+}
+
+
+@media (prefers-color-scheme: light) {
+  .Input {
+    background-color: #ffff !important;
+  }
+}
