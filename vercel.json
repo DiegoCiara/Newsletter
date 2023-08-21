@@ -1,7 +1,11 @@
 {
     "routes": [
       {
-        "src": "/(?!comunidade).*",
+        "src": "/comunidade/[^.]+",
+        "dest": "/comunidade"
+      },
+      {
+        "src": "/[^.]+",
         "dest": "/"
       }
     ]
