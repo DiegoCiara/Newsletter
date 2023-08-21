@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],  
   routes: [
     { path: '/', component: Home },
-    { path: '/about', component: About },
+    { path: '/comunidade', component: Contacts },
   ],
 })
