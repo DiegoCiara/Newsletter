@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Contacts from './pages/Contacts';
 import NavBar from './components/NavBar/NavBar';
 import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
