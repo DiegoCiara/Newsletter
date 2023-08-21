@@ -35,7 +35,6 @@ function Contacts() {
     fetchContatos();
   }, []);
 
-  
   const handleDeleteContact = async (contactId) => {
     try {
       await axios.delete(`http://localhost:3333/api/contatos/${contactId}`);
@@ -93,9 +92,11 @@ function Contacts() {
     <div className='Page'>
       <title>Newsletter: Comunidade</title>
       <h1>Comunidade</h1> 
+      <div className='Links'>
       <TextField
         size='small'
         type="text"
+        className="Input"
         label="Pesquisar por nome"
         value={searchTerm}
         onChange={handleSearchChange}
@@ -107,12 +108,15 @@ function Contacts() {
           ),
         }}
       />
+
+      </div>
       <p>Veja os participantes da comunidade!</p>     
       <div style={{width:"100%"}}>
         <div className='ContactsList'>
           {currentContacts.map((contato) => (
             <ContactCard
               key={contato.id}
+              id={contato.id}
               name={contato.nome}
               email={contato.email}
               onDelete={() => handleDeleteContact(contato.id)} 
